@@ -38,7 +38,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: M3G
+        TNAME: MI-R3G
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
@@ -100,5 +100,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: M3G
+        name: MI-R3G
         path: /opt/images
