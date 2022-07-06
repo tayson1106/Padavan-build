@@ -100,5 +100,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: MI-R3G880mhz
+        name: MI-R3G4.4
         path: /opt/images
